@@ -25,14 +25,14 @@ export const getMovieId = async movieId => {
 
 export const getCast = async movieId => {
   const response = await axios.get(
-    `movie/${movieId}/credits?api_key=3a7b9fae23d21ee4f1e0a0e3e74eac23&language=en-US`
+    `movie/${movieId}/credits?api_key=cb666b8d3023e727f90c417a602578cd&language=en-US`
   );
   return response.data.cast;
 };
 
 export const getReviews = async movieId => {
   const response = await axios.get(
-    `movie/${movieId}/reviews?api_key=3a7b9fae23d21ee4f1e0a0e3e74eac23&language=en-US&page=1`
+    `movie/${movieId}/reviews?api_key=cb666b8d3023e727f90c417a602578cd&language=en-US&page=1`
   );
   return response.data;
 };
